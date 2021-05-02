@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const Title = styled.p`
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #e5e5e5;
     margin: 1rem 5rem;
     font-weight: 500;
@@ -11,7 +11,8 @@ export const Title = styled.p`
     }
 
     @media (max-width: 600px){
-        margin: 1rem;
+        margin: 1rem 2rem;
+        font-size: 2rem;
     }
 `
 
@@ -19,12 +20,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-${'' /*     
-    > ${Title} {
-        @media (max-width: 1000px) {
-            margin-left: 2rem;
-        } 
-    } */}
 
     &:last-of-type {
         margin-bottom: 0;
@@ -81,10 +76,9 @@ export const Feature = styled.div`
     background-size: contain;
     position: relative;
     height: 36rem;
-    margin-top: 2rem;
+    margin: 2rem 5rem 2rem 0;
     background-position: top right;
     background-repeat: no-repeat;
-    margin-right: 5rem;
 
     @media (max-width: 1000px) {
         margin-right: 3rem;
@@ -95,7 +89,6 @@ export const Feature = styled.div`
         margin-right: 4vw;
 
         ${Title} {
-            font-size: 3rem;
             margin-bottom: 1rem;
         }
 
@@ -108,7 +101,7 @@ export const Feature = styled.div`
     @media (max-width: 600px) {
 
         ${Title} {
-            font-size: 2rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
         }
 
@@ -127,6 +120,7 @@ export const Feature = styled.div`
 `
 
 export const FeatureTitle = styled(Title)`
+    font-size: 5rem;
     margin-left: 0;
 `
 
@@ -211,6 +205,10 @@ export const Item = styled.div`
     position: relative;
     cursor: pointer;
     transition: all .5s ease-in-out;
+
+    &:focus {
+        outline: 1px solid #fff;
+    }
 
     &:hover {
         transform: scale(1.3);
