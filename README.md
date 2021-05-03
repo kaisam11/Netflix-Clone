@@ -1,6 +1,6 @@
 # Netflix Clone
 
-This project was created using React.js, Styled Component and Firebase. User can SignUp, SignIn and SignOut.
+This project was created using React.js, Styled-Components and Firebase. User can SignUp, SignIn and SignOut.
 User can search for Films and Series. User can click on a movie and a modal should pop up. It should display the title, overview, and rating.
 The webpage adapts to any screen size.
 
