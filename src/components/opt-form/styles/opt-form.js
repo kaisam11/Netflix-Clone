@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro'
+import { Link as ReactRouterLink } from 'react-router-dom'
 
 export const Container = styled.div`
     display: flex;
@@ -29,10 +30,11 @@ export const Input = styled.input`
     }
 `
 
-export const Button = styled.button`
+export const Button = styled(ReactRouterLink)`
     display: flex;
     align-items: center;
     background-color: #e50914;
+    text-decoration: none;
     margin-top: 2rem;
     color: #fff;
     padding: 1.5rem 3.2rem;

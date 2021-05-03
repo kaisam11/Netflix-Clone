@@ -11,8 +11,8 @@ OptForm.Input = function OptFormInput({ ...props }) {
     return <Input {...props} />
 }
 
-OptForm.Button = function OptFormButton({ children }) {
-    return <Button>
+OptForm.Button = function OptFormButton({ children, to }) {
+    return <Button to={to}>
         {children} <img src="/images/icons/chevron-right.png" alt='Try Now' />
     </Button>
 }

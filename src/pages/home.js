@@ -4,6 +4,7 @@ import { JumbotronContainer } from '../containers/jumbotronContainer'
 import { FooterContainer } from '../containers/footerContainer'
 import { AccordianContainer } from '../containers/accordianContainer'
 import { OptForm, Feature } from '../components'
+import * as ROUTES from '../constants/routes'
 
 export default function Home() {
     return (
@@ -14,7 +15,7 @@ export default function Home() {
                     <Feature.SubTitle>Watch anywhere. Cancel at any time</Feature.SubTitle>
                     <OptForm>
                         <OptForm.Input placeholder='Email Address' />
-                        <OptForm.Button>Get started</OptForm.Button>
+                        <OptForm.Button to={ROUTES.SIGN_UP} alt='signin'>Get started</OptForm.Button>
                         <OptForm.Break />
                         <OptForm.Text>
                             Ready to watch? Enter your email address to create or restart membership
