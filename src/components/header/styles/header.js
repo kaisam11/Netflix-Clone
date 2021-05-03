@@ -210,6 +210,7 @@ export const Profile = styled.div`
     &:hover > ${Dropdown}{
         display: flex;
         flex-direction: column;
+        z-index: 100000;
     } 
 `
 
