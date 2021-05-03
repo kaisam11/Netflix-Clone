@@ -6,6 +6,9 @@ export const Background = styled.div`
     flex-direction: column;
     background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover no-repeat;
 
+    @media (min-width: 1900px) {
+        align-items: center;
+    }
     
     @media (max-width: 1100px) {
         ${'' /* ${({ dontShowOnSmallViewport }) => dontShowOnSmallViewport && `background: none;` } */}
@@ -90,6 +93,11 @@ export const Feature = styled(Container)`
     align-items: normal;
     width: 50%;
     margin: 0 5rem;
+
+    @media (min-width: 1900px){
+        width: 100%;
+        padding: 20vh 70rem 20vh 5rem;
+    }
 
     @media (max-width: 800px) {
         padding: 2rem 5vw;

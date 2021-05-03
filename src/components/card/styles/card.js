@@ -38,6 +38,11 @@ export const Group = styled.div`
         }
     }
 
+    @media (min-width: 1900px) {
+        align-items: center;
+        
+    }
+
     @media (max-width: 600px) {
         margin: 3rem 0 5rem;
     }
@@ -195,6 +200,7 @@ export const Meta = styled.div`
 export const Entities = styled.div`
     display: flex;
     flex-direction: row;
+    max-width: 1920px;
 `
 
 export const Item = styled.div`
